@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+src/UnitTestPractice/TestNinja.UnitTests/TestNinja.UnitTests/bin/
+src/UnitTestPractice/TestNinja.UnitTests/TestNinja.UnitTests/obj/
+src/UnitTestPractice/TestNinja/TestNinja/obj/
+.vs/
