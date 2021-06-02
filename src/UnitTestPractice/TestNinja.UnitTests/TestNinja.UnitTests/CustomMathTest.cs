@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace TestNinja.UnitTests
 {
@@ -28,6 +29,18 @@ namespace TestNinja.UnitTests
             //Assert
             Assert.AreEqual(result, returnNumber);
         }
+
+        [TestMethod]
+        [DataRow(null)]
+        [DataRow("")]
+        [DataRow(" ")]
+        public void CanBeDevide_GivenInvalidInput_returnsException(string value)
+        {
+
+            //Assert
+            Assert.ThrowsException<ArgumentNullException>(() => _customMath.Devide("1", value));
+        }
+
 
         [TestMethod]
         [Ignore("don't run")]
