@@ -29,6 +29,20 @@ namespace TestNinja.UnitTests
             Assert.AreEqual(result, returnNumber);
         }
 
+        [TestMethod]
+        [Ignore("don't run")]
+
+        public void CanBeMethod_Condition_returnsAssert()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+            Assert.IsFalse(false);
+        }
+
+
 
     }
 }
